@@ -1,0 +1,15 @@
+name: Test
+on: [pull_request, workflow_dispatch]
+jobs:
+  test:
+    strategy:
+      matrix:
+        os: [windows-latest, windows-11-arm]
+      fail-fast: false
+    runs-on: ${{matrix.os}}
+    steps:
+      - uses: actions/checkout@v7
+      - uses: marler8997/setup-anyzig@master
+      - run: zig build install install-x86_64 install-aarch64 install-x86 test --summary all
+      # the exe for this machine's arch has to at least start
+      - run: zig build run -- --help
