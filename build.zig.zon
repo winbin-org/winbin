@@ -1,0 +1,29 @@
+.{
+    .name = .winbin,
+    .fingerprint = 0xbd588a2978c866b8,
+    .version = "0.0.1",
+    .dependencies = .{
+        .staticio = .{
+            .url = "git+https://github.com/marler8997/zig-staticio#757f0f82346dc72821a314716141767f23c93e2d",
+            .hash = "staticio-0.0.0-ypcguFqyAABuHOp5fr9CJs39UchssOB_SEa0TC-p8gwf",
+        },
+        .patch = .{
+            .url = "git+https://github.com/marler8997/zig-patch#c3ad78b305ba03bcd645c0bac004d1719407c6b8",
+            .hash = "patch-0.0.0-WCKjsxixAADfwXQv4Vugyxo6PFbDFuuyM7ly3OiqZRYR",
+        },
+        .exelink = .{
+            .url = "git+https://github.com/marler8997/exelink#b57d84f4be61b6dde2dd2d431081abda4e79f3de",
+            .hash = "exelink-0.0.1-uYGz94JYAQDFHAl4VoG_pt7IhS7pmuV6CBmprcGFya9C",
+        },
+        .zip = .{
+            .url = "git+https://github.com/marler8997/zipcmdline#90289282eb4fa0b984e6d99cea9695e02fb043c2",
+            .hash = "zipcmdline-0.0.0-DFii0-7PAACK7_UJ8gasN6DXAmgD5WABH2x6DNaljPQc",
+        },
+        .wintrace = .{
+            .url = "git+https://github.com/marler8997/wintrace#371d429a09897aae77a9e41ffff9c7b2f03fe350",
+            .hash = "wintrace-0.0.0-RwkrxUrdAQDMDugFeQVn57o-yx40uYhUP9RU7RFp-ZCF",
+        },
+    },
+    .minimum_zig_version = "0.17.0",
+    .paths = .{ "build.zig", "build.zig.zon", "src" },
+}
